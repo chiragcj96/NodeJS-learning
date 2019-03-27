@@ -10,8 +10,8 @@ fs.unlink('write.txt');     //will delete the file "write.txt" if it exists or w
 fs.rmdirSync('stuff');      //It will remove the directory "stuff" synchronously.
 
 fs.mkdir('stuff', function(){
-  fs.readFile('readMe.txt', 'utf8', function(err, data){
-    fs.writeFile('./stuff/writeMe.txt', data);
+  fs.readFile('readMe.txt', 'utf8', function(err, data){      //the function for if any error occurs, feed the data
+    fs.writeFile('./stuff/writeMe.txt', data);      //the data is uploaded
     console.log(data);
   });
 });
