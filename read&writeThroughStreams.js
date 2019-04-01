@@ -10,3 +10,6 @@ readStream.on('data', funtion(chunk){     //through the stream, data is sent in 
   writeStream.write(chunk);     //it writes the chunk of data into the writeMe.txt file through writeStream.
   
 });
+
+
+// readMe.txt file will have the data which user needs to read. It will reside in the same folder of the .js file.
